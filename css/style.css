@@ -1,6 +1,11 @@
+body {
+  text-align: center;
+}
+
 #tabellone {
   display: inline-block;
   width: 80%;
+  padding-block-end: 3rem;
 }
 
 .cella {
@@ -11,8 +16,20 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  margin-inline: auto;
+  border: 1px solid green;
+  max-width: max-content;
+  padding: 1rem;
+}
+
 .bottoneEstrazione {
   display: block;
+  margin-inline: auto;
   margin-block: 2rem;
   padding: 1rem;
   border-radius: 10%;

@@ -1,10 +1,10 @@
-//1) creare 76 celle con numeri da 1 a 76 TABELLONE
+//1) 👍creare 76 celle con numeri da 1 a 76 TABELLONE
 
-//2) creare un <button> che con il suo click selezioni un numero random (da 1 a 76)
+//2) 👍creare un <button> che con il suo click selezioni un numero random (da 1 a 76)
 
-//3) visualizza in modo diverso la casella trovata dal button (cambio colore dello sfondo)
+//3) 👍visualizza in modo diverso la casella trovata dal button (cambio colore dello sfondo)
 
-//4) mantieni il colore della cella dei elementi già estratti
+//4) 👍mantieni il colore della cella dei elementi già estratti
 
 const caselleTabellone = () => {
   const tabellone = document.getElementById("tabellone");
@@ -32,13 +32,8 @@ const caselleTabellone = () => {
     estratto.style = "background-color: green";
 
     // COME VISUALIZZARE IL VALORE ESTRATTO
-    const h2NumVisto = document.getElementsByTagName("h2");
-    //h2NumVisto.push(estratto.innerText);
-    console.log(h2NumVisto);
-
-    //const selezioneNumEstratto = estratto.innerText;
-    //const NumEstrattoIndex = parseInt(selezioneNumEstratto);
-    //h2.innerText = push(NumEstrattoIndex);
+    const numberContenitore = document.querySelector(".push-number h2");
+    numberContenitore.innerText = numeroRandom;
   };
 };
 
