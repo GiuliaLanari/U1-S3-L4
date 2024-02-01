@@ -1,0 +1,17 @@
+#tabellone {
+  display: inline-block;
+}
+
+.cella {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid black;
+  text-align: center;
+}
+
+#bottoneEstrazione {
+  display: block;
+  margin-block: 2rem;
+  padding: 1rem;
+  border-radius: 10%;
+}
