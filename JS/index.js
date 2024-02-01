@@ -1,4 +1,4 @@
-//1)👍 creare 76 celle con numeri da 1 a 76 TABELLONE
+//1) creare 76 celle con numeri da 1 a 76 TABELLONE
 
 //2) creare un <button> che con il suo click selezioni un numero random (da 1 a 76)
 
@@ -20,12 +20,25 @@ const caselleTabellone = () => {
     tabellone.appendChild(cella);
   }
   // CREAZIONE DEL BOTTONE
-  const bottoneEstrazione = document.getElementById("bottoneEstrazione");
+
+  const bottoneEstrazione = document.querySelector(".bottoneEstrazione");
 
   bottoneEstrazione.onclick = () => {
-    if (cellaH3.length === 1) {
-      Math.ceil(Math.random() * 76);
-    }
+    const numeroRandom = Math.ceil(Math.random() * 76);
+    const arrayCelle = document.querySelectorAll(".cella");
+
+    // console.log(numeroRandom, arrayCelle[numeroRandom - 1]);
+    const estratto = arrayCelle[numeroRandom - 1];
+    estratto.style = "background-color: green";
+
+    // COME VISUALIZZARE IL VALORE ESTRATTO
+    const h2NumVisto = document.getElementsByTagName("h2");
+    //h2NumVisto.push(estratto.innerText);
+    console.log(h2NumVisto);
+
+    //const selezioneNumEstratto = estratto.innerText;
+    //const NumEstrattoIndex = parseInt(selezioneNumEstratto);
+    //h2.innerText = push(NumEstrattoIndex);
   };
 };
 

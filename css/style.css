@@ -1,15 +1,17 @@
 #tabellone {
   display: inline-block;
+  width: 80%;
 }
 
 .cella {
   display: inline-block;
+  width: 2rem;
   padding: 0.5rem;
   border: 1px solid black;
   text-align: center;
 }
 
-#bottoneEstrazione {
+.bottoneEstrazione {
   display: block;
   margin-block: 2rem;
   padding: 1rem;
